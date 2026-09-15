@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizytówka - Miłosz Bisior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="pfp.png" alt="Zdjęcie profilowe Miłosza Bisiora">
+        <h1>Miłosz Bisior 5P1T</h1>
+    </header>
+
+    <main>
+        <section class="umiejetnosci">
+            <h3>Umiejętności</h3>
+            <ul>
+                <li>HTML</li>
+                <li>JS</li>
+                <li>C#</li>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <section class="umiejetnosci2" id="form-container">
+            <h3>Dane kontaktowe</h3>
+            <form id="contact-form" novalidate>
+                <div class="field">
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie">
+                    <span class="error" id="error-imie"></span>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="error-email"></span>
+                </div>
+
+                <div class="field">
+                    <label for="temat">Temat:</label>
+                    <select id="temat" name="temat">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="wiadomosci">Wiadomość:</label>
+                    <textarea id="wiadomosci" name="wiadomosci"></textarea>
+                    <span class="error" id="error-wiadomosci"></span>
+                </div>
+
+                <input type="submit" value="Wyślij" class="btn">
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
