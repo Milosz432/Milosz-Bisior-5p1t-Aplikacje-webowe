@@ -5,6 +5,7 @@ import AddPhotoModal from './components/AddPhotoModal.jsx'
 import FiltersOffcanvas from './components/FiltersOffcanvas.jsx'
 import Footer from './components/Footer.jsx'
 import './App.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
