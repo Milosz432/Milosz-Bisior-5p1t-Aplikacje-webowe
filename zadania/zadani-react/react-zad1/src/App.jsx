@@ -45,52 +45,43 @@ function App() {
               żeby zawęzić widok — albo powiększ zdjęcie, które Ci się spodoba.
             </p>
           </div>
-
           <div className="col-12 col-lg-4">
             <div className="d-flex flex-wrap gap-2 justify-content-lg-end">
               <button
                 type="button"
                 className="btn btn-outline-secondary"
                 data-bs-toggle="offcanvas"
-                data-bs-target="#panelFiltrow"
-              >
+                data-bs-target="#panelFiltrow">
                 Filtry
               </button>
               <button
                 type="button"
                 className="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#dodajZdjecie"
-              >
+                data-bs-target="#dodajZdjecie">
                 Dodaj zdjęcie
               </button>
             </div>
           </div>
         </div>
       </header>
-
       <main className="container">
         <CategoryBar aktywna={aktywnaKategoria} onWybierz={setAktywnaKategoria} />
-
         <p className="text-body-secondary">
           Wyświetlono {widoczne.length} z {zdjecia.length} zdjęć
         </p>
-
         {widoczne.length === 0 && (
           <div className="alert alert-warning">
             Nie znaleziono zdjęć w tej kategorii.
           </div>
         )}
-
         <Gallery
           zdjecia={widoczne}
           onUsun={usunZdjecie}
           onPrzelacz={przelaczUlubione}
         />
       </main>
-
       <Footer />
-
       <AddPhotoModal onDodaj={dodajZdjecie} />
       <FiltersOffcanvas aktywna={aktywnaKategoria} onWybierz={setAktywnaKategoria} />
     </>
