@@ -1,10 +1,17 @@
+import Navbar from "./components/Navbar.jsx"
+import CategoryBar from './components/CategoryBar.jsx'
+import Gallery from './components/Gallery.jsx'
+import AddPhotoModal from './components/AddPhotoModal.jsx'
+import FiltersOffcanvas from './components/FiltersOffcanvas.jsx'
+import Footer from './components/Footer.jsx'
 import './App.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
     <>
-    <Navbar />
+
+       <Navbar />
 
       <header className="container py-4 py-lg-5">
         <div className="row align-items-center g-3">
@@ -47,7 +54,7 @@ function App() {
       <Footer />
 
       <AddPhotoModal />
-      <FiltersOffcanvas />
+      <FiltersOffcanvas /> 
     </>
   )
 }
