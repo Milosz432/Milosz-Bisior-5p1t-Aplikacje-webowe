@@ -3,6 +3,10 @@ const KATEGORIE = [
   { value: 'morze', label: 'Morze' },
   { value: 'miasto', label: 'Miasto' },
 ]
+
+// Ten sam stan aktywnaKategoria co w CategoryBar — offcanvas to tylko
+// drugi widok na ten sam filtr, nie osobny stan. Zaznaczenie kategorii
+// zawęża widok wyłącznie do niej, ponowny klik wraca do "wszystkie".
 function FiltersOffcanvas({ aktywna, onWybierz }) {
   function przelacz(kategoria) {
     onWybierz(aktywna === kategoria ? 'wszystkie' : kategoria)

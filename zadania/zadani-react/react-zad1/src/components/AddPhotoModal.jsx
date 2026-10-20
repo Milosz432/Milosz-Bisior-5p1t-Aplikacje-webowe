@@ -8,6 +8,9 @@ const PUSTY_FORMULARZ = {
   alt: '',
   description: '',
 }
+
+// Formularz na razie bez walidacji — to temat MB7. Tutaj interesuje nas
+// tylko przepływ danych: submit woła `onDodaj` z App i zamyka modal.
 function AddPhotoModal({ onDodaj }) {
   const [formularz, setFormularz] = useState(PUSTY_FORMULARZ)
 
